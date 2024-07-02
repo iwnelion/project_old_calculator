@@ -16,9 +16,10 @@ h1{
 #display{
     border: 3px dotted black;
     margin: 10%;
-    padding: 5%;
+    min-height: 10%;
     text-align: right;
     background-color: white;
+    font-size: 35px;
 }
 #btns{
     margin: 10%;

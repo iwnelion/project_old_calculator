@@ -15,7 +15,7 @@ function divide(n1, n2){
     if(n2!==0){
         return n1/n2;
     }else{
-        return "can't divide by zero";
+        alert("can't divide by zero");
     }
 }
 
@@ -55,7 +55,7 @@ function calc(nm1, operatorOption, nm2){
         case '/':
             return divide(nm1, nm2);
         default:
-            return 'wrong operator';
+            alert('wrong operator');
     }
 }
 
@@ -69,5 +69,8 @@ for(let i=0;i<buttons.length;i++){
 const clear=document.getElementById('clr');
 clear.addEventListener('click', ()=>{
     const display=document.getElementById('display');
-    display.value='';
+    display.textContent='';
+    nm1='';
+    nm2='';
+    operatorOption='';
 });
